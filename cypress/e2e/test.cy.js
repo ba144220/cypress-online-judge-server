@@ -1,6 +1,6 @@
 describe("Testing App", () => {
   beforeEach(() => {
-    cy.visit(`http://localhost:4000`);
+    cy.visit(`https://dark-teal-coati-slip.cyclic.app/test-app`);
   });
   it("there is a button", () => {
     cy.get('[id="main-button"]').should("be.visible");
