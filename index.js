@@ -27,7 +27,7 @@ app.use(
 
 app.use(express.static(path.join(__dirname, "uploads", "build")));
 
-app.get("/", (req, res) => {
+app.get("/alive", (req, res) => {
   return res.status(200).send("hi");
 });
 app.get("/test-app", (req, res) =>
